@@ -25,6 +25,14 @@ var inject = function(array, func, initial_val) {
     var i = 0;
     var result = initial_val;
   }
+  
+  // you can simplify the above with an or, like so:
+  // var result = initial_val || array[0];
+  // possibly. then you still have to take care of the
+  // i. but that could be a one-liner too using a
+  // ternary operator.
+  
+  
   for(i; i < array.length; i++){
     result = func(result, array[i]);
   }
