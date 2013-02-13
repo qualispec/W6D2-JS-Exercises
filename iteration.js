@@ -31,6 +31,8 @@ var substrings = function(word, dictionary){
       subword = word.slice(start, end);
       if((dictionary.indexOf(subword) > -1) && (strings.indexOf(subword) == -1)) {
         strings.push(subword);
+        
+        // nice touch with the dictionary!
       }
     }
   }
