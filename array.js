@@ -29,6 +29,10 @@ var transpose = function(array) {
   var num_rows = array.length;
   var num_cols = array[0].length;
 
+  // instead of creating the blank array this way,
+  // you could also use push as you do the transposition.
+  // don't know if that is a better way, but it might
+  // be shorter code.
   var results = new Array(num_cols);
   for(var x = 0; x < num_cols; x++){
     results[x] = new Array(num_rows);
